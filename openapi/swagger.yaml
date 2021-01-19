@@ -5,8 +5,8 @@ servers:
     url: https://virtserver.swaggerhub.com/dimus/gnparser/1.0.0
 info:
   description: |
-    GNparser takes scientific names and parses them
-    into their semantic elements.
+    GNparser takes a scientific name and splits it into
+    structural elements.
 
     Scientific names can be represented in many different
     variants. For example "Homo sapiens" exists as
