@@ -415,7 +415,7 @@ components:
           description: meaning and position of every parsed word.
           type: array
           items:
-            - $ref: "#/components/schemas/Word"
+            $ref: "#/components/schemas/Word"
         id:
           type: string
           description: |
@@ -455,7 +455,7 @@ components:
           type: integer
           enum: [0, 1, 2, 3, 4]
           example: 2
-
+          
     Canonical:
       description: |
         Simplified versions of a name-string more suitable for
