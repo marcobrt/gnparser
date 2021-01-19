@@ -255,26 +255,117 @@ components:
         {
           "parsed": true,
           "quality": 2,
-          "qualityWarnings":
-            [{ "quality": 2, "warning": "Year with latin character" }],
+          "qualityWarnings": [
+            {
+              "quality": 2,
+              "warning": "Year with latin character"
+            }
+          ],
           "verbatim": "Pleurosigma vitrea var. kjellmanii H.Peragallo, 1891a",
           "normalized": "Pleurosigma vitrea var. kjellmanii H. Peragallo 1891",
-          "canonical":
-            {
-              "stemmed": "Pleurosigma uitre kiellmani",
-              "simple": "Pleurosigma vitrea kjellmanii",
-              "full": "Pleurosigma vitrea var. kjellmanii",
-            },
+          "canonical": {
+            "stemmed": "Pleurosigma uitre kiellmani",
+            "simple": "Pleurosigma vitrea kjellmanii",
+            "full": "Pleurosigma vitrea var. kjellmanii"
+          },
           "cardinality": 3,
-          "authorship":
+          "authorship": {
+            "verbatim": "H.Peragallo, 1891a",
+            "normalized": "H. Peragallo 1891",
+            "year": "1891",
+            "authors": [
+              "H. Peragallo"
+            ],
+            "originalAuth": {
+              "authors": [
+                "H. Peragallo"
+              ],
+              "year": {
+                "year": "1891"
+              }
+            }
+          },
+          "details": {
+            "infraSpecies": {
+              "genus": "Pleurosigma",
+              "species": "vitrea",
+              "infraSpecies": [
+                {
+                  "value": "kjellmanii",
+                  "rank": "var.",
+                  "authorship": {
+                    "verbatim": "H.Peragallo, 1891a",
+                    "normalized": "H. Peragallo 1891",
+                    "year": "1891",
+                    "authors": [
+                      "H. Peragallo"
+                    ],
+                    "originalAuth": {
+                      "authors": [
+                        "H. Peragallo"
+                      ],
+                      "year": {
+                        "year": "1891"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "words": [
             {
-              "verbatim": "H.Peragallo, 1891a",
-              "normalized": "H. Peragallo 1891",
-              "year": "1891",
-              "authors": ["H. Peragallo"],
+              "verbatim": "Pleurosigma",
+              "normalized": "Pleurosigma",
+              "wordType": "GENUS",
+              "start": 0,
+              "end": 11
             },
+            {
+              "verbatim": "vitrea",
+              "normalized": "vitrea",
+              "wordType": "SPECIES",
+              "start": 12,
+              "end": 18
+            },
+            {
+              "verbatim": "var.",
+              "normalized": "var.",
+              "wordType": "RANK",
+              "start": 19,
+              "end": 23
+            },
+            {
+              "verbatim": "kjellmanii",
+              "normalized": "kjellmanii",
+              "wordType": "INFRASPECIES",
+              "start": 24,
+              "end": 34
+            },
+            {
+              "verbatim": "H.",
+              "normalized": "H.",
+              "wordType": "AUTHOR_WORD",
+              "start": 35,
+              "end": 37
+            },
+            {
+              "verbatim": "Peragallo",
+              "normalized": "Peragallo",
+              "wordType": "AUTHOR_WORD",
+              "start": 37,
+              "end": 46
+            },
+            {
+              "verbatim": "1891a",
+              "normalized": "1891",
+              "wordType": "YEAR",
+              "start": 48,
+              "end": 53
+            }
+          ],
           "id": "f6a5b47b-9917-5a48-b0ff-366bc036ae9c",
-          "parserVersion": "v1.0.0",
+          "parserVersion": "v0.14.4-37-g5eb244b"
         }
       required:
         - id
