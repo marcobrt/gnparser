@@ -30,8 +30,9 @@ info:
 
     The GNparser code and documentation is
     located at https://github.com/gnames/gnparser.
+
     For more examples see
-    https://github.com/gnames/gnparser/blob/v1.0.0/testdata/test_data.md
+    [test_data.md](https://github.com/gnames/gnparser/blob/v1.0.0/testdata/test_data.md)
 
   version: "1.0.0"
   title: Global Names Parser API
@@ -286,10 +287,10 @@ components:
             }
           },
           "details": {
-            "infraSpecies": {
+            "infraspecies": {
               "genus": "Pleurosigma",
               "species": "vitrea",
-              "infraSpecies": [
+              "infraspecies": [
                 {
                   "value": "kjellmanii",
                   "rank": "var.",
@@ -498,7 +499,7 @@ components:
           oneOf:
             - $ref: "#/components/schemas/DetailsUninomial"
             - $ref: "#/components/schemas/DetailsSpecies"
-            - $ref: "#/components/schemas/DetailsInfraSpecies"
+            - $ref: "#/components/schemas/DetailsInfraspecies"
             - $ref: "#/components/schemas/DetailsComparison"
             - $ref: "#/components/schemas/DetailsApproximation"
             - $ref: "#/components/schemas/DetailsHybridFormula"
@@ -518,7 +519,7 @@ components:
           example: f6a5b47b-9917-5a48-b0ff-366bc036ae9c
         version:
           type: string
-          description: version of GNParser
+          description: version of GNparser
           example: "v1.0.0"
     QualityWarning:
       description: |
@@ -755,7 +756,7 @@ components:
       example: |
         "species": {
           "genus": "Pycnodonte",
-          "subGenus": "Notostrea",
+          "subgenus": "Notostrea",
           "species": "tarda"
         }
       required:
@@ -782,14 +783,14 @@ components:
             authorship:
               $ref: "#/components/schemas/Authorship"
 
-    DetailsInfraSpecies:
+    DetailsInfraspecies:
       description: Details for multinomial names
       type: object
       example: |
-        "infraSpecies": {
+        "infraspecies": {
           "genus": "Pleurosigma",
           "species": "vitrea",
-          "infraSpecies": [ {
+          "infraspecies": [ {
               "value": "kjellmanii",
               "rank": "var.",
               "authorship": {
@@ -812,9 +813,9 @@ components:
           ]
         }
       required:
-        - infraSpecies
+        - infraspecies
       properties:
-        infraSpecies:
+        infraspecies:
           type: object
           required:
             - genus
@@ -833,7 +834,7 @@ components:
               example: vitrea
             authorship:
               $ref: "#/components/schemas/Authorship"
-            infraSpecies:
+            infraspecies:
               description: Infra-specific epithets
               type: array
               items:
@@ -948,7 +949,7 @@ components:
             oneOf:
               - $ref: "#/components/schemas/DetailsUninomial"
               - $ref: "#/components/schemas/DetailsSpecies"
-              - $ref: "#/components/schemas/DetailsInfraSpecies"
+              - $ref: "#/components/schemas/DetailsInfraspecies"
 
     Word:
       description: Semantic meaning and a position of a word in a name.
