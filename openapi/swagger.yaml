@@ -46,7 +46,7 @@ info:
     name: MIT
     url: https://opensource.org/licenses/MIT
 paths:
-  /{names}:
+  /parse/{names}:
     get:
       summary: parses scientific names via HTTP using GET method
       operationId: parseSciNames
@@ -60,7 +60,7 @@ paths:
           required: true
           schema:
             type: string
-            example: |
+            example: >-
               Pleurosigma vitrea var. kjellmanii H.Peragallo, 1891a|Bubo bubo
         - in: query
           name: with_details
@@ -142,7 +142,7 @@ paths:
                 f6a5b47b-9917-5a48-b0ff-366bc036ae9c,"Pleurosigma vitrea var. kjellmanii H.Peragallo, 1891a",3,Pleurosigma uitre kiellmani,Pleurosigma vitrea kjellmanii,Pleurosigma vitrea var. kjellmanii,H. Peragallo 1891,1891,2
 
                 4431a0f3-e901-519a-886f-9b97e0c99d8e,Bubo bubo,2,Bubo bub,Bubo bubo,Bubo bubo,,,1
-  /:
+  /parse:
     post:
       summary: Parses scientific names via HTTP using POST method.
       description: |
