@@ -1,6 +1,8 @@
 openapi: 3.0.0
 servers:
   # Added by API Auto Mocking Plugin
+  - description: GNparser production service
+    url: https://parser.globalnames.org/api/v1
   - description: SwaggerHub API Auto Mocking
     url: https://virtserver.swaggerhub.com/dimus/gnparser/1.0.0
 info:
