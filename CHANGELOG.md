@@ -2,10 +2,17 @@
 
 ## Unreleased
 
+## [v1.0.12]
+
+- Add [#154]: parse names with ambiguous `f.` as forma if there
+              is a space between authr and `f.`. If there is
+              no space, parse as `filius`. Give ambiguity
+              warning in both cases.
+
 ## [v1.0.11]
 
-- Fix [#153]: flags `csv=false` and `with_details=false` trigger opposite
-              behavior.
+- Fix [#153]: flags `csv=false` and `with_details=false`
+              trigger opposite behavior.
 
 ## [v1.0.10]
 

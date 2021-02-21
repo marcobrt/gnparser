@@ -823,7 +823,7 @@ func (p *Engine) newAuthorNode(n *node32) *authorNode {
 	n = n.up
 	for n != nil {
 		switch n.token32.pegRule {
-		case ruleFilius:
+		case ruleFilius, ruleFiliusFNoSpace:
 			w = p.newWordNode(n, parsed.AuthorWordFiliusType)
 			w.NormValue = "fil."
 			fil = true
